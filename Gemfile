@@ -57,6 +57,7 @@ group :development, :staging do
 end
 
 group :test do
+  gem "minitest", "5.10.3"
   gem "database_cleaner"
   gem "formulaic"
   gem "launchy"
@@ -71,6 +72,8 @@ group :test do
     git: 'https://github.com/rebelidealist/stripe-ruby-mock.git',
     branch: 'master',
     require: 'stripe_mock'
+  gem "factory_bot_rails"
+  gem "capybara-webkit"
 end
 
 group :staging, :production do

@@ -103,6 +103,9 @@ GEM
       rack (>= 1.0.0)
       rack-test (>= 0.5.4)
       xpath (>= 2.0, < 4.0)
+    capybara-webkit (1.1.0)
+      capybara (~> 2.0, >= 2.0.2)
+      json
     choice (0.2.0)
     climate_control (0.2.0)
     codeclimate-engine-rb (0.4.1)
@@ -132,6 +135,11 @@ GEM
     erubi (1.7.0)
     erubis (2.7.0)
     execjs (2.7.0)
+    factory_bot (4.8.2)
+      activesupport (>= 3.0.0)
+    factory_bot_rails (4.8.2)
+      factory_bot (~> 4.8.2)
+      railties (>= 3.0.0)
     faraday (0.14.0)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.18)
@@ -194,7 +202,7 @@ GEM
     method_source (0.9.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
-    minitest (5.11.3)
+    minitest (5.10.3)
     minitest-reporters (1.1.19)
       ansi
       builder
@@ -411,10 +419,12 @@ DEPENDENCIES
   bcrypt
   bullet
   bundler-audit (>= 0.5.0)
+  capybara-webkit
   climate_control
   database_cleaner
   dotenv-rails
   enumerize
+  factory_bot_rails
   flutie
   font-awesome-rails
   formulaic
@@ -428,6 +438,7 @@ DEPENDENCIES
   launchy
   letter_opener
   listen
+  minitest (= 5.10.3)
   minitest-reporters
   minitest-stub_any_instance
   normalize-rails (~> 3.0.0)
